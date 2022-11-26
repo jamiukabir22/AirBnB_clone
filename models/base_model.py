@@ -5,7 +5,8 @@ from datetime import datetime
 
 class BaseModel:
     """
-    other classes will inherit this model which contain all the attributes and methods needed by other classes
+    other classes will inherit this model which contain all
+    the attributes and methods needed by other classes
     """
 
     def __init__(self):
@@ -18,7 +19,7 @@ class BaseModel:
 
     def __str__(self):
         """
-        resetting the 
+        resetting the return value of str
         """
         return ('[' +type(self).__name__ + '] (' + str(self.id) + ') ' + str(self.__dict__))
 
